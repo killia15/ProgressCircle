@@ -1,0 +1,29 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Progress Circle Demo</title>
+	<link rel="stylesheet" href="progresscircle.css">
+	<style>
+		body {font-family: sans-serif}
+		.circlechart {
+		 	float: left;
+			padding: 20px;
+		}
+	</style>
+</head>
+<body>
+	<h1>Progress Circle Demo</h1>
+	<div id="demo">
+	  <div class="circlechart" data-percentage="-20">Keep Trying!</div>
+	  <div class="circlechart" data-percentage="30">Getting There...</div>
+	  <div class="circlechart" data-percentage="85">Nice Going.</div>
+	</div>
+	<script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="progresscircle.js"></script>
+	<script>
+		$('.circlechart').circlechart(); // Initialization
+	</script>
+</body>
+</html>
